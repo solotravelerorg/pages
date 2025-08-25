@@ -1,0 +1,59 @@
+title: Solo Traveler
+author:
+  name: Brandon Himpfen
+  email: brandonhimpfen@gmail.com
+
+description: >
+  Pages by Solo Traveler
+
+permalink: pretty
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /:slug/
+  travel:
+    output: true
+    permalink: /:slug/
+  miscellaneous:
+    output: true
+    permalink: /:slug/       
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "base"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "travel"
+    values:
+      layout: "page"       
+      
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
