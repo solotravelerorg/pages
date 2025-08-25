@@ -3,9 +3,6 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="https://www.solotraveler.org/" title="Solo Traveler">Home</a></li>
             <li class="breadcrumb-item"><a href="https://pages.solotraveler.org/" title="Solo Traveler Pages">Pages</a></li>
-            {% if page.channel %}
-                <li class="breadcrumb-item"><a href="/{{ page.channel | downcase }}/" title="{{ page.channel | capitalize }}">{{ page.channel | capitalize }}</a></li>
-            {% endif %}
             <li class="breadcrumb-item active" aria-current="page"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></li>
         </ol>
     </nav>
